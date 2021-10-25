@@ -1,7 +1,7 @@
 from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
-from Vcmusic.queues import QUEUE, get_queue
+from vcmusic.queues import QUEUE, get_queue
 from config import HNDLR, contact_filter
 
 @Client.on_message(contact_filter & filters.command(['playlist', 'queue'], prefixes=f"{HNDLR}"))
