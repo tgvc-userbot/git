@@ -85,5 +85,5 @@ async def help(client, m: Message):
 
 @Client.on_message(filters.user(OWNER_ID) & filters.command(['repo'], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
-   KONTOL = f"⚙️ **Source code**\n• **😼 Github :** [Vcmusic-Userbot](https://github.com/KennedyProject/Vcmusic-Userbot)\n• 🗂️ **GPL - 3.0 License**"
+   KONTOL = f"⚙️ **Source code**\n• **σɯɳҽɾ :** [𝐌𝟒𝐔](https://t.me/VasuXD)\n• 🗂️ **GPL - 3.0 License**"
    await m.edit(KONTOL, disable_web_page_preview=True)
