@@ -2,7 +2,7 @@ import os
 import re
 import asyncio
 from pyrogram import Client
-from Vcmusic.queues import QUEUE, add_to_queue
+from vcmusic.queues import QUEUE, add_to_queue
 from config import bot, call_py, HNDLR, contact_filter
 from pyrogram import filters
 from pyrogram.types import Message
