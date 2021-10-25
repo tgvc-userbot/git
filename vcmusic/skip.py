@@ -2,8 +2,8 @@ from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
 from config import bot, call_py, HNDLR, contact_filter
-from Vcmusic.handlers import skip_current_song, skip_item
-from Vcmusic.queues import QUEUE, clear_queue
+from vcmusic.handlers import skip_current_song, skip_item
+from vcmusic.queues import QUEUE, clear_queue
 
 @Client.on_message(contact_filter & filters.command(['skip'], prefixes=f"{HNDLR}"))
 async def skip(client, m: Message):
